@@ -1,0 +1,365 @@
+{
+    "options": {
+        "status": ["normal", "degraded", "down", "maintenance"]
+    },
+    "overview": {
+        "status": "normal",
+        "message": "Hub sites operating normally."
+    },
+    "services": [
+        {
+            "title": "Hub Sites",
+            "status": "normal"
+        },
+        {
+            "title": "Search API",
+            "status": "normal"
+        },
+        {
+            "title": "Content Indexer",
+            "status": "normal"
+        },
+        {
+            "title": "Downloads",
+            "status": "normal"
+        },
+        {
+            "title": "Discussions",
+            "status": "normal"
+        }
+    ],
+    "history": {
+	"2023-05-20T17:33:00Z": {
+            "message": "Hub sites are operating as expected for all customers.",
+            "status": "normal"
+	},
+	"2023-05-20T17:15:00Z": {
+            "message": "Hub sites were not available for customers.",
+            "status": "degraded"
+	},
+        "2022-12-06T16:12:00Z": {
+            "message": "Hub Services are operating normally.",
+            "status": "normal"
+	},
+        "2022-12-06T15:15:00Z": {
+            "message": "Hub sites were down due to the Site Domains service not being available. Issue has been resolved. ",
+            "status": "down"
+        },
+	   "2022-09-19T18:11:00Z": {
+            "message": "Hub sites operating normally.",
+            "status": "normal"
+        },
+        "2022-09-19T16:20:00Z": {
+            "message": "Hub sites were slow to load or unavailable for short time periods. Issue resolved by increasing scaling of Site rendering services.",
+            "status": "degraded"
+        },	    
+        "2022-06-22T12:00:00Z": {
+            "message": "Maintenance has concluded, Hub Services are operating normally.",
+            "status": "normal"
+        },
+        "2022-06-18T13:00:00Z": {
+            "message": "Hub services are in maintenance mode in order to update the content update, search, and download system.",
+            "status": "maintenance"
+        },
+        "2022-05-28T07:00:00Z": {
+            "message": "Maintenance has concluded, Hub Services are operating normally.",
+            "status": "normal"
+        },
+        "2022-05-27T23:00:00Z": {
+            "message": "Hub services are in maintenance mode in order to update the content update and download jobs system.",
+            "status": "maintenance"
+        },
+        "2022-05-17T17:00:00Z": {
+            "message": "Hub Services are operating normally.",
+            "status": "normal"
+        },
+        "2022-05-10T22:00:00Z": {
+            "message": "We've identified an issue with the local projections function for public downloads. All downloaded files will have a spatial reference of 4326.",
+            "status": "degraded"
+        },
+        "2022-02-27T01:21:00Z": {
+          "message": "Maintenance has concluded, Hub Services are operating normally.",
+          "status": "normal"
+        },
+        "2022-02-26T22:53:00Z": {
+          "message": "Scheduled Maintenance: indexing operations paused.",
+          "status": "degraded"
+        },
+        "2021-09-30T15:44:00Z": {
+            "message": "Hub Services are operating normally.",
+            "status": "normal"
+        },
+        "2021-09-30T14:20:00Z": {
+            "message": "Users will not be able to access search or directly navigate to content views. We are working to resolve this issue as quickly as possible.",
+            "status": "degraded"
+        },
+        "2021-09-17T19:35:00Z": {
+            "message": "Hub downloads are operating normally when accessing content from header links or gallery cards.",
+            "status": "normal"
+        },
+        "2021-09-14T19:35:00Z": {
+            "message": "UPDATED: Users may still see an 'API Error' on download cards. This occurs when navigating directly to multi-layer content using header links or gallery cards.",
+            "status": "degraded"
+        },
+        "2021-09-08T18:15:00Z": {
+            "message": "Users may see an 'API Error' on download cards. This occurs when navigating directly to content using header links or gallery cards.",
+            "status": "degraded"
+        },
+        "2021-06-11T18:25:00Z": {
+            "message": "Hub downloads are operating normally.",
+            "status": "normal"
+        },
+        "2021-06-07T12:00:00Z": {
+            "message": "Certain Feature Layer items are not downloadable and show an 'API Error' alert.",
+            "status": "degraded"
+        },
+        "2021-06-03T14:32:00Z": {
+            "message": "Hub downloads are operating normally.",
+            "status": "normal"
+        },
+        "2021-05-25T19:00:00Z": {
+            "message": "Hub is experiencing an issue with the local projection downloads feature.",
+            "status": "degraded"
+        },
+        "2021-05-25T19:00:00Z": {
+            "message": "Download speeds are back to normal.",
+            "status": "degraded"
+        },
+        "2021-05-25T16:00:00Z": {
+            "message": "Increased traffic to new download API endpoints has caused download latency.",
+            "status": "degraded"
+        },
+        "2021-05-17T14:32:00.00Z": {
+            "message": "Hub Sites are available. The SSL certificate was renewed and new monitoring added.",
+            "status": "normal"
+        },
+        "2021-05-17T12:23:03.189Z": {
+                "message": "Hub Sites became unavailable due to an invalid SSL certificate.",
+                "status": "down"
+            },
+        "2021-05-15T04:24:03.189Z": {
+            "message": "Hub Sites and Search API are operating normally.",
+            "status": "normal"
+        },
+        "2021-05-15T03:47:42.016Z": {
+            "message": "Hub sites and Search API not available due to a DNS outage. We are actively resolving the issue.",
+            "status": "down"
+        },
+        "2021-05-13T15:30:00Z": {
+            "message": "Users will no longer experience intermittent issues seeing search results. The Hub team monitored this issue and found no issues over the past week.",
+            "status": "normal"
+        },
+        "2021-04-28T22:00:00Z": {
+            "message": "Content indexing is back to normal. Users will still experience intermittent issues seeing search results.",
+            "status": "degraded"
+        },
+        "2021-04-28T19:00:00Z": {
+            "message": "Content indexing is delayed. Users may not see immediate updates to their content.",
+            "status": "degraded"
+        },
+        "2021-04-27T16:08:00Z": {
+            "message": "Users may intermittently see no results when searching for private items only.",
+            "status": "degraded"
+        },
+        "2021-04-26T21:00:00Z": {
+            "message": "CSV downloads are operating normally.",
+            "status": "normal"
+        },
+        "2021-04-22T20:00:00Z": {
+            "message": "CSV downloads are currently unavailable.",
+            "status": "degraded"
+        },
+        "2021-04-14T14:43:00Z": {
+            "message": "Content updates and download execution times are back to normal.",
+            "status": "normal"
+        },
+        "2021-04-13T22:06:00Z": {
+            "message": "New site creation is now working. Users may still experience a delay seeing content updates and/or creating new download files.",
+            "status": "degraded"
+        },
+        "2021-04-13T17:57:00Z": {
+            "message": "New site creation is down. Hub is experiencing issues with a service provider that may contribute to this problem.",
+            "status": "degraded"
+        },
+        "2021-04-12T22:04:00Z": {
+            "message": "Hub's download system and content indexer are degraded. Users may experience download file updates and content updates taking longer than usual.",
+            "status": "degraded"
+        },
+        "2021-04-12T19:00:00Z": {
+            "message": "Hub's download system and content indexer are functioning normally.",
+            "status": "normal"
+        },
+        "2021-04-10T01:00:00Z": {
+            "message": "Hub's download system and content indexer are degraded. Users may experience download file updates and content updates taking longer than usual.",
+            "status": "degraded"
+        },
+        "2021-04-09T19:00:00Z": {
+            "message": "Hub's download system is degraded. Users may experience download file updates taking longer than usual.",
+            "status": "degraded"
+        },
+        "2021-02-15T02:50:00Z": {
+            "message": "Hub Sites are no longer in maintenance mode.",
+            "status": "normal"
+        },
+        "2021-02-15T02:19:00Z": {
+            "message": "Hub Sites are in maintenance mode in order to update the custom domain service.",
+            "status": "maintenance"
+        },
+        "2021-01-10T01:18:00Z": {
+            "message": "Hub Sites are functioning normally.",
+            "status": "normal"
+        },
+        "2021-01-10T00:33:00Z": {
+            "message": "Hub Sites may be slow to load. We are investigating the issue.",
+            "status": "degraded"
+        },
+	    "2020-11-26T15:12:45Z": {
+            "message": "AWS services have been fully restored. Content indexing has resumed, but items will still be delayed as the indexer tries to catch up.",
+            "status": "degraded"
+        },
+        "2020-11-25T15:10:00Z": {
+            "message": "AWS services are experiencing disruptions. Content indexing has been paused.",
+            "status": "degraded"
+        },
+        "2020-11-19T20:10:00Z": {
+            "message": "Hub Search is operating normally",
+            "status": "normal"
+        },
+        "2020-11-19T19:30:00Z": {
+            "message": "Hub Search does not load more results",
+            "status": "degraded"
+        },
+        "2020-10-13T00:13:00Z": {
+            "message": "Hub DNS outage",
+            "status": "down"
+        },
+        "2020-08-22T20:00:00Z": {
+            "message": "Search and indexing are operating normally",
+            "status": "normal"
+        },
+        "2020-08-21T11:30:00Z": {
+            "message": "Search and indexing may have some increased latency",
+            "status": "degraded"
+        },
+        "2020-08-18T23:00:00Z": {
+            "message": "Search on Hub sites and download file updates are operating normally.",
+            "status": "normal"
+        },
+        "2020-08-18T20:50:00Z": {
+            "message": "Search on Hub sites is down. Downloads are operating normally but download files may not have the most recent updates.",
+            "status": "degraded"
+        },
+        "2020-08-18T20:30:00Z": {
+            "message": "Downloads are operating normally but download files may not have the most recent updates.",
+            "status": "degraded"
+        },
+        "2020-08-14T16:00:00Z": {
+            "message": "Download file updates are operating normally.",
+            "status": "normal"
+        },
+        "2020-08-10T16:00:00Z": {
+            "message": "Downloads are operating normally but download files may not have the most recent updates.",
+            "status": "degraded"
+        },
+        "2020-08-06T19:30:00Z": {
+            "message": "Content indexing is functioning normally.",
+            "status": "normal"
+        },
+        "2020-08-06T16:30:00Z": {
+            "message": "There is a delay in item indexing.",
+            "status": "degraded"
+        },
+        "2020-07-31T21:29:00Z": {
+            "message": "Content indexing is functioning normally.",
+            "status": "normal"
+        },
+	"2020-07-31T17:42:00Z": {
+            "message": "There is a delay in item indexing.",
+            "status": "degraded"
+        },
+        "2020-07-30T22:30:00Z": {
+            "message": "Content indexing is functioning normally.",
+            "status": "normal"
+        },
+        "2020-07-30T18:30:00Z": {
+            "message": "There is a delay in item indexing.",
+            "status": "degraded"
+        },
+        "2020-07-28T20:00:00Z": {
+            "message": "Sites are stable again. We are closely monitoring",
+            "status": "normal"
+        },
+        "2020-07-28T18:25:00Z": {
+            "message": "Sites are not rendering properly.",
+            "status": "degraded"
+        },
+        "2020-07-28T10:30:00Z": {
+            "message": "Sites are functioning normally.",
+            "status": "normal"
+        },
+        "2020-07-28T09:20:00Z": {
+    	     "message": "Sites are not rendering properly.",
+    	     "status": "down"
+        },
+	     "2020-07-27T20:06:00Z": {
+		        "message": "Sites are functioning normally.",
+		        "status": "normal"
+	      },
+	      "2020-07-27T19:56:00Z": {
+		        "message": "Sites are not rendering properly.",
+		        "status": "down"
+	      },
+        "2020-07-14T01:30:00Z": {
+            "message": "Search and V3 API responding in expected time frame.",
+            "status": "normal"
+        },
+        "2020-07-14T01:30:00Z": {
+            "message": "Search and V3 API are degraded. Users may experience a delay while searching or accessing the dataset route.",
+            "status": "degraded"
+        },
+        "2020-07-14T01:30:00Z": {
+            "message": "Search and V3 API are down. Users will not be able to access search and site navigation may be delayed.",
+            "status": "degraded"
+        },
+        "2020-07-13T23:00:00Z": {
+            "message": "Search and V3 API responding in expected time frame.",
+            "status": "normal"
+        },
+        "2020-07-13T22:15:00Z": {
+            "message": "When executing a search or querying the V3 API, users will experience up to a 7 second delay before seeing results.",
+            "status": "degraded"
+        },
+        "2020-07-09T02:00:00Z": {
+            "message": "Search and V3 API responding in expected time frame.",
+            "status": "normal"
+        },
+        "2020-07-08T22:30:00Z": {
+            "message": "When executing a search or querying the V3 API, users will experience up to a 7 second delay before seeing results.",
+            "status": "degraded"
+        },
+        "2020-06-08T14:00:00Z": {
+            "message": "Index responding in expected time frame",
+            "status": "normal"
+        },
+        "2020-06-05T14:00:00Z": {
+            "message": "Index updates delayed",
+            "status": "degraded"
+        },
+	    "2020-03-30T19:12:00Z": {
+            "message": "Sites were restored.",
+            "status": "normal"
+        },
+        "2020-03-30T19:00:00Z": {
+            "message": "Sites were unavailable due to a domain service outage.",
+            "status": "degraded"
+        },
+        "2020-03-19T15:00:00Z": {
+            "message": "Sites available.",
+            "status": "normal"
+        },
+        "2020-03-19T14:00:00Z": {
+            "message": "Sites were unavailable.",
+            "status": "down"
+        }
+    }
+}

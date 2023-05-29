@@ -2,7 +2,7 @@ import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'REPLACE_PROJECT_NAME',
+  namespace: 'hub-status',
   sourceMap: true,
   plugins: [
     sass()
@@ -31,6 +31,9 @@ export const config: Config = {
         },
         {
           src: "./data/*",
+        },
+        {
+          src: "./assets/*",
         },
         {
           src: "./**/*.json", dest: 'data/'

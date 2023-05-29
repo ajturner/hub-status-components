@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+.services-list {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+
+}

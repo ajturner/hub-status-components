@@ -6,19 +6,124 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface HubStatusHistory {
+        /**
+          * Number of days history to show
+         */
+        "days": number;
+        /**
+          * Array of status change events  "history": { "2023-02-10T17:33:00Z": {        "message": "Hub sites are operating as expected for all customers.",        "status": "normal" }, "2023-02-10T17:15:00Z": {        "message": "Hub sites were not available for customers.",        "status": "degraded" },
+         */
+        "history": any;
+    }
+    interface HubStatusService {
+        /**
+          * {        "title": "Hub Sites",        "Status": "normal"    }
+         */
+        "service": any;
+    }
+    interface HubStatusServiceList {
+        /**
+          * "services": [    {        "title": "Hub Sites",        "Status": "normal"    },    {        "title": "Search API",        "Status": "normal"    },    {        "title": "Content Indexer",        "Status": "normal"    },    {        "title": "Downloads",        "Status": "normal"    },    {        "title": "Discussions",        "Status": "normal"    } ],
+         */
+        "services": any;
+    }
+    interface HubStatusSummary {
+        /**
+          * {      "status": "normal",      "title": "All Good. Systems are running as expected!",      "message": "There are no known outages for ArcGIS Hub. Notice Something?"  }
+         */
+        "status": any;
+    }
+    interface HubStatusView {
+    }
 }
 declare global {
+    interface HTMLHubStatusHistoryElement extends Components.HubStatusHistory, HTMLStencilElement {
+    }
+    var HTMLHubStatusHistoryElement: {
+        prototype: HTMLHubStatusHistoryElement;
+        new (): HTMLHubStatusHistoryElement;
+    };
+    interface HTMLHubStatusServiceElement extends Components.HubStatusService, HTMLStencilElement {
+    }
+    var HTMLHubStatusServiceElement: {
+        prototype: HTMLHubStatusServiceElement;
+        new (): HTMLHubStatusServiceElement;
+    };
+    interface HTMLHubStatusServiceListElement extends Components.HubStatusServiceList, HTMLStencilElement {
+    }
+    var HTMLHubStatusServiceListElement: {
+        prototype: HTMLHubStatusServiceListElement;
+        new (): HTMLHubStatusServiceListElement;
+    };
+    interface HTMLHubStatusSummaryElement extends Components.HubStatusSummary, HTMLStencilElement {
+    }
+    var HTMLHubStatusSummaryElement: {
+        prototype: HTMLHubStatusSummaryElement;
+        new (): HTMLHubStatusSummaryElement;
+    };
+    interface HTMLHubStatusViewElement extends Components.HubStatusView, HTMLStencilElement {
+    }
+    var HTMLHubStatusViewElement: {
+        prototype: HTMLHubStatusViewElement;
+        new (): HTMLHubStatusViewElement;
+    };
     interface HTMLElementTagNameMap {
+        "hub-status-history": HTMLHubStatusHistoryElement;
+        "hub-status-service": HTMLHubStatusServiceElement;
+        "hub-status-service-list": HTMLHubStatusServiceListElement;
+        "hub-status-summary": HTMLHubStatusSummaryElement;
+        "hub-status-view": HTMLHubStatusViewElement;
     }
 }
 declare namespace LocalJSX {
+    interface HubStatusHistory {
+        /**
+          * Number of days history to show
+         */
+        "days"?: number;
+        /**
+          * Array of status change events  "history": { "2023-02-10T17:33:00Z": {        "message": "Hub sites are operating as expected for all customers.",        "status": "normal" }, "2023-02-10T17:15:00Z": {        "message": "Hub sites were not available for customers.",        "status": "degraded" },
+         */
+        "history"?: any;
+    }
+    interface HubStatusService {
+        /**
+          * {        "title": "Hub Sites",        "Status": "normal"    }
+         */
+        "service"?: any;
+    }
+    interface HubStatusServiceList {
+        /**
+          * "services": [    {        "title": "Hub Sites",        "Status": "normal"    },    {        "title": "Search API",        "Status": "normal"    },    {        "title": "Content Indexer",        "Status": "normal"    },    {        "title": "Downloads",        "Status": "normal"    },    {        "title": "Discussions",        "Status": "normal"    } ],
+         */
+        "services"?: any;
+    }
+    interface HubStatusSummary {
+        /**
+          * {      "status": "normal",      "title": "All Good. Systems are running as expected!",      "message": "There are no known outages for ArcGIS Hub. Notice Something?"  }
+         */
+        "status"?: any;
+    }
+    interface HubStatusView {
+    }
     interface IntrinsicElements {
+        "hub-status-history": HubStatusHistory;
+        "hub-status-service": HubStatusService;
+        "hub-status-service-list": HubStatusServiceList;
+        "hub-status-summary": HubStatusSummary;
+        "hub-status-view": HubStatusView;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "hub-status-history": LocalJSX.HubStatusHistory & JSXBase.HTMLAttributes<HTMLHubStatusHistoryElement>;
+            "hub-status-service": LocalJSX.HubStatusService & JSXBase.HTMLAttributes<HTMLHubStatusServiceElement>;
+            "hub-status-service-list": LocalJSX.HubStatusServiceList & JSXBase.HTMLAttributes<HTMLHubStatusServiceListElement>;
+            "hub-status-summary": LocalJSX.HubStatusSummary & JSXBase.HTMLAttributes<HTMLHubStatusSummaryElement>;
+            "hub-status-view": LocalJSX.HubStatusView & JSXBase.HTMLAttributes<HTMLHubStatusViewElement>;
         }
     }
 }

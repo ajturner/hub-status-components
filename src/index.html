@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <title>REPLACE_PROJECT_NAME</title>
+  <title>Hub Status</title>
 
-  <script type="module" src="./build/REPLACE_PROJECT_NAME.esm.js"></script>
-  <script nomodule src="./build/REPLACE_PROJECT_NAME.js"></script>
+  <script type="module" src="./build/hub-status.esm.js"></script>
+  <script nomodule src="./build/hub-status.js"></script>
 
   <link
     rel="stylesheet"
@@ -26,11 +26,18 @@
       margin: 0;
       padding: 0;
     }
+    #placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+      overflow: auto;
+    }
   </style>
 
   <script>
     // Dynamically add the component so we can set URL or object properties
-    const componentName = "prototype";
+    const componentName = "hub-status-view";
 
     const placeholderEl = document.getElementById("placeholder");
     const componentEl = document.createElement( componentName );
