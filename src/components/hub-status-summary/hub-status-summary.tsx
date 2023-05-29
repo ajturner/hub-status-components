@@ -1,10 +1,5 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 import { getStatusDisplay } from '../../utils/status';
-import "@esri/calcite-components/dist/components/calcite-notice";
-
-import { setAssetPath } from "@esri/calcite-components/dist/components";
-// CDN hosted assets
-setAssetPath("https://js.arcgis.com/calcite-components/1.4.0/assets");
 
 @Component({
   tag: 'hub-status-summary',
