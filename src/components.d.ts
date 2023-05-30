@@ -6,6 +6,16 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface HubChangelog {
+        /**
+          * Array of status change events  { "versions": {    "2023-05-20T17:33:00Z": {        "added": [            {"text": "[Beta] Search results can now be filtered by source"},            {"text": "[Beta] Search results may now be filtered by license"},            {"text": "Updated translation strings"}        ],        "changed": [            {"text": "Updated translation strings"}        ],        "fixed": [            {"text": "Fixed popover positioning under side panel tab controls"},            {"text": "Fixed an issue where selecting a Discussions graphic on the map while one is already selected did not unselect the previous graphic"},            {"text": "Updated CSS selector to apply underlined links on 404 pages"},            {"text": "[Beta] Fixed issue where the experimental map filter stopped working on the new search route (/explore) after the route had switched to using the OGC API"},            {"text": "Removed pluralized strings for language support due to problematic translation support in browsers"},            {"text": "Fixed issue where selecting a dataset from the global nav search while on a dataset page would break the map"}        ]    } } }
+         */
+        "changelogUrl": any;
+        /**
+          * Number of days history to show
+         */
+        "days": number;
+    }
     interface HubStatusHistory {
         /**
           * Number of days history to show
@@ -38,6 +48,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLHubChangelogElement extends Components.HubChangelog, HTMLStencilElement {
+    }
+    var HTMLHubChangelogElement: {
+        prototype: HTMLHubChangelogElement;
+        new (): HTMLHubChangelogElement;
+    };
     interface HTMLHubStatusHistoryElement extends Components.HubStatusHistory, HTMLStencilElement {
     }
     var HTMLHubStatusHistoryElement: {
@@ -69,6 +85,7 @@ declare global {
         new (): HTMLHubStatusViewElement;
     };
     interface HTMLElementTagNameMap {
+        "hub-changelog": HTMLHubChangelogElement;
         "hub-status-history": HTMLHubStatusHistoryElement;
         "hub-status-service": HTMLHubStatusServiceElement;
         "hub-status-service-list": HTMLHubStatusServiceListElement;
@@ -77,6 +94,16 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface HubChangelog {
+        /**
+          * Array of status change events  { "versions": {    "2023-05-20T17:33:00Z": {        "added": [            {"text": "[Beta] Search results can now be filtered by source"},            {"text": "[Beta] Search results may now be filtered by license"},            {"text": "Updated translation strings"}        ],        "changed": [            {"text": "Updated translation strings"}        ],        "fixed": [            {"text": "Fixed popover positioning under side panel tab controls"},            {"text": "Fixed an issue where selecting a Discussions graphic on the map while one is already selected did not unselect the previous graphic"},            {"text": "Updated CSS selector to apply underlined links on 404 pages"},            {"text": "[Beta] Fixed issue where the experimental map filter stopped working on the new search route (/explore) after the route had switched to using the OGC API"},            {"text": "Removed pluralized strings for language support due to problematic translation support in browsers"},            {"text": "Fixed issue where selecting a dataset from the global nav search while on a dataset page would break the map"}        ]    } } }
+         */
+        "changelogUrl"?: any;
+        /**
+          * Number of days history to show
+         */
+        "days"?: number;
+    }
     interface HubStatusHistory {
         /**
           * Number of days history to show
@@ -108,6 +135,7 @@ declare namespace LocalJSX {
     interface HubStatusView {
     }
     interface IntrinsicElements {
+        "hub-changelog": HubChangelog;
         "hub-status-history": HubStatusHistory;
         "hub-status-service": HubStatusService;
         "hub-status-service-list": HubStatusServiceList;
@@ -119,6 +147,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "hub-changelog": LocalJSX.HubChangelog & JSXBase.HTMLAttributes<HTMLHubChangelogElement>;
             "hub-status-history": LocalJSX.HubStatusHistory & JSXBase.HTMLAttributes<HTMLHubStatusHistoryElement>;
             "hub-status-service": LocalJSX.HubStatusService & JSXBase.HTMLAttributes<HTMLHubStatusServiceElement>;
             "hub-status-service-list": LocalJSX.HubStatusServiceList & JSXBase.HTMLAttributes<HTMLHubStatusServiceListElement>;
